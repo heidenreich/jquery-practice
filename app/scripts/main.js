@@ -1,4 +1,5 @@
 
+// OH SNAP
 
 $('.activate-box').click(function(){
 	console.log('the button clicked');
