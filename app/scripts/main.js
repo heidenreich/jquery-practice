@@ -1,19 +1,28 @@
 
-// OH SNAP
+// OHHH SNAP
 
-$('.activate-box').click(function(){
-	console.log('the button clicked');
-
-	$('.box').addClass('active');
+$('.button-one').click(function(){
+  console.log('the button clicked');
+ 
+  $(this).addClass('active');
 });
 
-$('.submit').click(function (){
-	console.log('focused on input!');
+// EXAMPLE TWO
 
-	$('input').addClass('error'){
-		if ($(this).val() == '') {
-			$(this).addClass('error');
-		}
-	});
+$('.button-two').click(function(){
+	console.log('Fade Away!');
 
+	$(this).fadeOut(2000);
+		
+});
+
+// EXAMPLE THREE
+
+$('.button-three').
+
+
+// EXAMPLE FOUR
+
+$("input").blur(function(){
+  console.log("We be blurring");
 });
