@@ -18,6 +18,9 @@ body {
 
 .example {
     margin: 50px auto;
+    &.border-all {
+        border: 2px dashed black;
+    }
 }
 
 
@@ -292,21 +295,29 @@ body {
    padding-right: 100px;
 }
 
-
-
+//TWENTY-THREE
 
 .twenty-three {
     height: 100px;
     width: 200px;
     margin: 50px auto;
     border: 2px solid black; 
+    line-height: 100px;
+    background: gray;
 }
+
+//TWENTY-FOUR
+
 .twenty-four {
     height: 100px;
     width: 200px;
     margin: 50px auto;
     border: 2px solid black; 
+    &.toggle-it {
+        background: purple;
+    }
 }
+
 
 .twenty-five {
     height: 100px;
@@ -342,292 +353,4 @@ body {
     margin: 50px auto;
     border: 2px solid black; 
 }
-
-// @import "compass/css3";
-
-// div{
-//   margin: 50px auto;
-// }
-
-// input {
-//   width: 200px;
-
-//   @include transition(all 1s ease);
-//   &.error{
-//       background: red;
-//       color: white;
-//   }
-// }
-
-// .box{
-//   width: 200px;
-//   height: 0px;
-//   margin: 50px auto;
-//   background: blue;
-//   overflow: hidden;
-
-//   @include transition(all 1s ease);
-// }
-
-// .box.active{
-//   height: 350px;
-// }
-
-// .container{
-//   width: 960px auto;
-//   padding: 10px 20px;
-// } 
-
-//  //Example 1
-// .hide-this{
-//   display: inline-block;
-//   width: 100px;
-//   height: 100px;
-//   background: orange;
-// }
-
-// //Example 2
-// .get-big{
-//   width: 100px;
-//   height: 100px;
-//   background: lightgreen;
-
-//   &.get-bigger{
-//       width: 300px;
-//       height: 300px;
-//       -webkit-transform: rotate(360deg);
-//         -webkit-transition:all .3s ease;
-//   }
-// }
-
-// //Example 3
-// .text-field{
-//   width: 150px;
-//   height: 50px;
-
-//   &.mouse-enter{
-//     background: yellow;
-//   }
-// }
-
-// //Example 4
-// .change-up{
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background: #a0238b;
-
-//   &.change{
-//     width: 200px;
-//     height: 200px;
-//     border-radius: 0;
-//     background: #950eef;
-//   }
-// }
-
-// //Example 5
-// .dbl-click-this{
-//   width: 100px;
-//   height: 200px;
-//   line-height: 100px;
-//   text-align: center;
-//   background: #5aa1c4;
-
-//   &.dbl-click{
-//     width: 200px;
-//     line-height: 200px;
-//     color: #263e70;
-//     font-size: 18px;
-//     box-shadow: 2px 2px gray;
-//   }
-// }
-
-// //Example 6
-// .input-field{
-//   width: 200px;
-//   height: 100px;
-//   margin: 5px;
-//   font-size: 16px; 
-// }
-
-// //Example 7
-// .table-data{
-//   width: 200px;
-//   height: 60px;
-//   text-align: center;
-//   background: #ce169a;
-
-//   &.data-toggle{
-//     background: yellow;
-//     color: blue;
-//   }
-// }
-
-// //Example 8
-
-
-// //Example 9
-// .button-trigger{
-//   width: 150px;
-//   height: 50px;
-// }
-
-// //Example 10
-// .loser{
-//   width: 300px;
-//   height: 300px;
-//   text-align: center;
-//   line-height: 300px;
-//   color: white;
-
-//   &.we-lose{
-//   border: 1px solid black;
-//   background: #238923;
-//   }
-// }
-
-// //Example 11
-// .hide-me{
-//   width: 325px;
-//   height: 90px;
-//   line-height: 90px;
-//   text-align: center;
-//   background: #190f82;
-//   color: white;
-// }
-
-// //Example 12
-// .fade-away{
-//   width: 450px;
-//   height: 200px;
-//   line-height: 200px;
-//   border-radius: 50%;
-//   text-align: center;
-//   background: #fc7bed;
-// }
-
-// //Example 13
-// .secret{
-//   position: relative;
-//   width: 400px;
-//   height: 100px;
-// }
-
-// .pswd{
-//   position: absolute;
-//   top:0;
-//   left: 0;
-//   width: 400px;
-//   font-size: 36px;
-//   text-align: center;
-//   color: blue;
-//   background: green;
-//   display: none;
-//   text-transform: uppercase;
-// }
-
-// .pswd span{
-//   display: none;
-// }
-
-// //Example 14 & 15
-// .find-me h3{
-//   display: inline;
-//   margin: 0 15px 0 0;
-// }
-
-// .find-me span{
-//   cursor: pointer;
-
-//   &.hilite{
-//     background:yellow;
-//   }
-// }
-
-// .find-me div{
-//   display: inline;
-//   color: blue;
-// }
-
-// //Example 16
-// .what-up{
-//   width: 250px;
-//   height: 125px;
-//   line-height: 125px;
-//   font-size: 32px;
-//   background: red;
-//   color: yellow;
-// }
-
-// //example 17
-// .start-here{
-// margin-bottom: 0;
-// }
-
-// .circle{
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 50%;
-//   background: brown;
-//   display: none;
-//   float: left;
-//   margin:10px 20px 0 0;
-// }
-
-// //example 20 & 21
-// .grr span{
-//   display: none;
-// }
-
-// //example 22
-// .ur-mom{
-//   display: inline;
-// }
-
-// //example 23
-
-// //example 24 
-// .box-yo{
-//   position: relative;
-//   width: 200px;
-//   height: 200px;
-//   background: orange;
-//   box-shadow: 2px 2px gray;
-//   @include transition(all 1s ease);
-
-//   &.box-yo-move{
-//     position: absolute;
-//     right: 0;
-//     width: 200px;
-//     height: 200px;
-//     background: brown;
-//   }
-// }
-
-// //example 25
-// .switch-aroo{
-//   width: 0; 
-//   height: 0;
-//   border-left: 50px solid transparent;
-//   border-right: 50px solid transparent;
-//   border-bottom: 100px solid black;
-
-//   &.switch-ster{
-//     border-left: 100px solid transparent;
-//     border-right: 100px solid transparent;
-//     border-bottom: 200px solid blue;
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -42,7 +42,7 @@ $('.click-here' ).click(function() {
 // EXAMPLE SIX
 $('.disappear').hover(function(){
 
- 	$('.six').slideUp();
+ 	$('.six').slideUp(3000);
 });
 
 //EXAMPLE SEVEN
@@ -151,12 +151,22 @@ $('.twenty-two').mouseover(function(){
 })
 
 
+//TWENTY-THREE
+
+$('.twenty-three').click(function() {
+
+	$('.example').toggleClass('border-all');	
+});
 
 
-// help
+//TWENTY-FOUR
+
+$('.twenty-four').click(function(){
+	$(this).toggleClass('.toggle-class');
+});
 
 
-
+//TWENTY-FIVE
 
 
 
@@ -227,18 +237,7 @@ $('.twenty-two').mouseover(function(){
 //   $(this).addClass('dbl-click');
 // });
 
-// //Example 6
-// $('.focus-pocus').mouseover(function(){
-//   $('.input-field').focus();
 
-// })
-
-// //Example 7
-// $('td').click(function(){
-//   $(this).toggleClass('data-toggle');
-// });
-
-// //Example 8 
 
 
 // //Example 9
