@@ -321,9 +321,17 @@ body {
 
 .twenty-five {
     height: 100px;
-    width: 200px;
+    width: 100px;
     margin: 50px auto;
     border: 2px solid black; 
+    &.arrow {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    
+        border-top: 20px solid green;
+    }
 }
 
 .twenty-six {
@@ -331,6 +339,10 @@ body {
     width: 200px;
     margin: 50px auto;
     border: 2px solid black; 
+    &.super-border {
+        border: 20px solid green;
+        background: red;
+    }
 }
 
 .twenty-seven {

@@ -166,10 +166,20 @@ $('.twenty-four').click(function(){
 });
 
 
-//TWENTY-FIVE
+//TWENTY-FIVE 
+
+$('.twenty-five').hover(function() {
+
+	$(this).toggleClass('arrow');	
+});
+
+//TWENTY-SIX
 
 
+$('.twenty-six').hover(function() {
 
+	$(this).addClass('super-border');	
+});
 
 
 
