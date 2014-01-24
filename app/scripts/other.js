@@ -98,8 +98,8 @@ function spaceAvailable(name){
 
 function addStudent (name){
 	if (academy.spaces > academy.students.length ){
-		return true;
-		academy.students.push(name);	
+		academy.students.push(name);
+		return true;	
 		console.log ("Welcome to the Iron Yard Academy !")
 	} else {
 		console.log ("The Iron Academy has no open Spots.");
