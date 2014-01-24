@@ -55,12 +55,12 @@ function removeTopping(entree, sauce){
 	console.log('I hate ' + entree.toppings[sauce])
 }
 
-removeTopping(sandiwch, 2)
+
 //TWO
 
 var academy = {
 	teachers: [ 'Joe', 'Mason'],
-	spaces: 15,
+	spaces: 20,
 	students: [ 
 			'Joshua',
 			'Austin',
@@ -83,6 +83,31 @@ var academy = {
 function countStudents(number){
 	console.log ('There are '+ academy.students.length + "  students in the Iron Yard Academy")
 };
+
+
+
+function spaceAvailable(name){	
+	if (academy.spaces > academy.students.length ){
+		console.log ("The Iron Yard Academy has openings.");
+		return true;
+	} else {
+		console.log ("The Iron Academy has no open Spots.");
+		return false;
+	}
+};
+
+function addStudent (name){
+	if (academy.spaces > academy.students.length ){
+		return true;
+		academy.students.push(name);	
+		console.log ("Welcome to the Iron Yard Academy !")
+	} else {
+		console.log ("The Iron Academy has no open Spots.");
+		return false;
+	}
+
+}
+
 
 
 
