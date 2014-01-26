@@ -55,12 +55,24 @@ function removeTopping(entree, sauce){
 	console.log('I hate ' + entree.toppings[sauce])
 }
 
+Array.prototype.randomElement = function () {
+    return this[Math.floor(Math.random() * this.length)]
+}
+
+var randomBun = hotdog.bun.randomElement()
+
+var randomToppings = hotdog.toppings.randomElement()
+
+var randomMeat = hotdog.meat.randomElement()
+
+function makeDog (){console.log(randomBun + ','+ randomMeat + ',' + randomToppings)}
+
 
 //TWO
 
 var academy = {
 	teachers: [ 'Joe', 'Mason'],
-	spaces: 20,
+	spaces: 15,
 	students: [ 
 			'Joshua',
 			'Austin',
@@ -99,8 +111,8 @@ function spaceAvailable(name){
 function addStudent (name){
 	if (academy.spaces > academy.students.length ){
 		academy.students.push(name);
+		console.log ("Welcome to the Iron Yard Academy !");
 		return true;	
-		console.log ("Welcome to the Iron Yard Academy !")
 	} else {
 		console.log ("The Iron Academy has no open Spots.");
 		return false;
@@ -109,7 +121,7 @@ function addStudent (name){
 }
 
 
-
+academy.students.forEach(function letterCount(student){console.log(student.length)});
 
 
 //THREE
